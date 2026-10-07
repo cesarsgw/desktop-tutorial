@@ -65,3 +65,8 @@ footer{text-align:center;padding:60px 20px;opacity:.5;font-size:.85rem}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .blobs{position:absolute;inset:0;filter:url(#goo);z-index:0}
 .goo-wrap::before{display:none}
+.adnote{opacity:.6;font-size:.85rem;margin:-14px 0 22px;max-width:760px}
+.partner{display:block;color:inherit;text-decoration:none;min-height:150px}
+.partner p{opacity:.8;margin:10px 0 14px}
+.partner .tag{position:absolute;top:14px;right:16px;font-size:.7rem;padding:2px 10px;border-radius:20px;background:rgba(255,255,255,.12);opacity:.8;z-index:1}
+.partner .go{color:var(--g);transition:letter-spacing .3s}.partner:hover .go{letter-spacing:.08em}

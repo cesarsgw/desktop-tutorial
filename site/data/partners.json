@@ -1,0 +1,11 @@
+{
+  "note": "Remplace chaque 'url' par TON lien d'affiliation/parrainage. Tant que c'est le lien par défaut, aucun gain.",
+  "partners": [
+    {"nom": "Binance", "desc": "Plus grande plateforme crypto au monde.", "url": "https://www.binance.com", "couleur": "#f3ba2f"},
+    {"nom": "Kraken", "desc": "Exchange sérieux, régulé en Europe.", "url": "https://www.kraken.com", "couleur": "#7c4dff"},
+    {"nom": "Coinbase", "desc": "Idéal pour débuter simplement.", "url": "https://www.coinbase.com", "couleur": "#2d7bff"},
+    {"nom": "Bitpanda", "desc": "Crypto, actions et ETF au même endroit.", "url": "https://www.bitpanda.com", "couleur": "#2dffa6"},
+    {"nom": "Ledger", "desc": "Portefeuille matériel pour sécuriser tes cryptos.", "url": "https://www.ledger.com", "couleur": "#ff3d9a"},
+    {"nom": "Trade Republic", "desc": "Bourse et ETF sans frais d'entrée.", "url": "https://traderepublic.com", "couleur": "#00e5ff"}
+  ]
+}

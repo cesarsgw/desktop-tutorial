@@ -70,3 +70,9 @@ fetch('data/recaps.json?'+Date.now()).then(r=>r.json()).then(({recaps})=>{
   $('#indices').innerHTML=last.chiffres.filter(c=>!['BTC','ETH'].includes(c.nom)).map((c,i)=>`<div class="glass coin rv" style="--g:${G[i+4]}"><h3>${c.nom}</h3><div class="p">${c.val}</div><b class="${cls(c.var)}">${sgn(c.var)}</b></div>`).join('');
   watch();
 });
+
+/* ---- partenaires (data/partners.json) ---- */
+fetch('data/partners.json?'+Date.now()).then(r=>r.json()).then(({partners})=>{
+  $('#partners').innerHTML=partners.map(p=>`<a class="glass coin partner rv" style="--g:${p.couleur}" href="${p.url}" target="_blank" rel="sponsored noopener"><span class="tag">Pub</span><h3>${p.nom}</h3><p>${p.desc}</p><b class="go">Découvrir →</b></a>`).join('');
+  watch();
+});
