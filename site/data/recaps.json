@@ -1,0 +1,18 @@
+{
+  "note": "Ajouter une entrée en haut chaque jour. Valeurs EXEMPLE tant que non remplacées.",
+  "recaps": [
+    {
+      "date": "2026-10-07",
+      "mood": "neutre",
+      "titre": "Exemple — à remplacer par le vrai récap",
+      "crypto": "Texte récap crypto du jour.",
+      "bourse": "Texte récap bourse du jour.",
+      "chiffres": [
+        {"nom": "BTC", "val": "—", "var": 0},
+        {"nom": "ETH", "val": "—", "var": 0},
+        {"nom": "S&P 500", "val": "—", "var": 0},
+        {"nom": "CAC 40", "val": "—", "var": 0}
+      ]
+    }
+  ]
+}

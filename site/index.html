@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LIQUIDITY — Crypto & Bourse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b"/>
+      <feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="g"/>
+      <feComposite in="SourceGraphic" in2="g" operator="atop"/></filter>
+    <filter id="warp"><feTurbulence id="turb" type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" scale="30"/></filter>
+  </defs>
+</svg>
+<canvas id="liquid"></canvas>
+<div class="cursor" id="cursor"></div>
+
+<header class="nav glass">
+  <a class="logo" href="#top">LIQUID<span>ITY</span></a>
+  <nav><a href="#live">Live</a><a href="#recaps">Récaps</a><a href="#bourse">Bourse</a></nav>
+  <div class="status"><i></i><span id="upd">connexion…</span></div>
+</header>
+
+<div class="ticker glass"><div class="track" id="ticker"></div></div>
+
+<main id="top">
+  <section class="hero">
+    <div class="goo-wrap">
+      <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+      <h1 data-split>Le marché<br>coule. Suis le flux.</h1>
+    </div>
+    <p class="sub">Crypto &amp; bourse — prix en direct, récap quotidien.</p>
+    <div class="stats">
+      <div class="glass stat"><small>Cap. totale</small><b id="mcap">—</b></div>
+      <div class="glass stat"><small>Volume 24h</small><b id="vol">—</b></div>
+      <div class="glass stat"><small>Dominance BTC</small><b id="dom">—</b></div>
+      <div class="glass stat"><small>Fear &amp; Greed</small><b id="fng">—</b></div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path id="w1" d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120Z"/></svg>
+
+  <section id="live">
+    <h2 class="rv">Crypto <em>live</em></h2>
+    <div class="grid" id="coins"></div>
+  </section>
+
+  <section id="bourse">
+    <h2 class="rv">Bourse <em>aujourd'hui</em></h2>
+    <div class="grid" id="indices"></div>
+  </section>
+
+  <section id="recaps">
+    <h2 class="rv">Récaps <em>quotidiens</em></h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+</main>
+
+<footer>Infos non conseillères en investissement. Données : CoinGecko, alternative.me.</footer>
+<script src="app.js"></script>
+</body>
+</html>
